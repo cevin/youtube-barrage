@@ -1,0 +1,17 @@
+{
+    "name": "Youtube Danmaku",
+    "version": "1.0",
+    "description": "Youtube Danmaku",
+    
+    "permissions":[
+        "declarativeContent"
+    ],
+    "manifest_version": 2,
+
+    "content_scripts":[
+        {
+            "matches":["https://www.youtube.com/*","https://www.youtube.com/"],
+            "js":["/libs/danmaku.min.js","/libs/danma.js"]
+        }
+    ]
+  }
